@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+</head>
+
+<body>
+   <div class="wrapper"> 
+    <div class="box box-1" id="animate"></div>
+    <div class="box box-2" ></div>
+    <div class="box box-3" ></div>
+
+
+    <script>
+        //javascript comment
+        // alert("hello")
+        console.log("hello there");
+        //gsap
+        // var boxtoanimate =document.getElementById("")
+
+        // gsap library .to method ,"" selector
+        gsap.to("#animate", {duration:1, delay:1, backgroundColor: "#ff0000" });
+        //timeline
+        var ourtimeline = gsap.timeline();
+        // ourtimeline.to("#animate", { duration: 2 ,backgroundColor: "red"});
+        // ourtimeline.to("#animate", { duration: 2 ,backgroundColor: "yellow"});
+        // ourtimeline.to("#animate", { duration: 2 ,backgroundColor: "orang"});
+        // ourtimeline.to("#animate", { duration: 2 ,backgroundColor: "green"});
+        ourtimeline.to(".box-1", { duration: 4, x: 100 , rotation: 45});
+        ourtimeline.to(".box-2", { duration: 4, x: 100 , rotation: 45},"-=1.5" );
+        ourtimeline.to(".box-3", { duration: 4, x: 100 , rotation: 45});
+
+
+
+    </script>
+</div>
+</body>
+</html>

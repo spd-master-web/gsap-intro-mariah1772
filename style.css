@@ -1,0 +1,38 @@
+:root{
+     --padding: 40px; 
+  /* --desktop:1240px: */
+
+}
+/* @media(min-wi) */
+ 
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%; 
+}
+
+body {
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    
+}
+
+.box {
+   
+    margin: var(--padding);
+    padding: var(--padding);
+
+    background-color: hotpink;
+}
+
+
+.wrapper {
+    padding: var(--padding);
+    background-color: pink;
+}
+
